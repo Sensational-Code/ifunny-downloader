@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+
+  "name": "iFunny Downloader",
+  "description": "Downloads iFunny images without the watermark and with a human readable name",
+  "version": "1.0",
+
+  "icons": { 
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+
+  "background": { 
+    "service_worker": "index.js",
+    "type": "module"
+  },
+
+  "host_permissions": [
+    "https://ifunny.co/*",
+    "https://img.ifunny.co/*"
+  ],
+
+  "permissions": [
+    "tabs",
+    "scripting", 
+    "contextMenus"
+  ]
+}
